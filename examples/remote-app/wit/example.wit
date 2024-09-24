@@ -1,0 +1,11 @@
+package example:remote;
+
+interface iface {
+    nullary: func() -> result<_, string>;
+}
+
+world example {
+    export echo: func(payload: string) -> result<string, string>;
+    export iface;
+    export wasu:versioned/handler@0.2.1;
+}

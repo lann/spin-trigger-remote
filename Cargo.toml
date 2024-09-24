@@ -1,0 +1,15 @@
+[package]
+name = "spin-trigger-remote"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+http-body-util = "0.1"
+hyper = { version = "1.4", features = ["server"] }
+hyper-util = { version = "0.1", features = ["tokio"] }
+serde_json = "1.0"
+spin-core = { path = "../spin/crates/core" }
+spin-runtime-factors = { path = "../spin/crates/runtime-factors" }
+spin-telemetry = { path = "../spin/crates/telemetry" }
+spin-trigger = { path = "../spin/crates/trigger" }
+tokio = { version = "1.38", features = ["full"] }

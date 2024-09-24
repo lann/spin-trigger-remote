@@ -1,0 +1,10 @@
+package wasu:versioned@0.2.1;
+
+interface handler {
+    variant kind {
+        empty,
+        full(list<char>),
+    }
+
+    call: func(kind: kind) -> result<string, string>;
+}

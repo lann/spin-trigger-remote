@@ -1,0 +1,5 @@
+name = "trigger-remote"
+version = "0.0.1-alpha"
+spin_compatibility = ">=3"
+license = "nope"
+package = "./target/release/spin-trigger-remote"
